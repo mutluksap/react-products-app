@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Box, Heading, Flex } from '@chakra-ui/react'
 import {Menu ,MenuButton, MenuList, MenuItem, Button, Tag} from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
@@ -24,8 +24,8 @@ function Header({emptyBasket, basket}) {
                     }
                     <MenuItem _hover={{ bg: "red.800", color: " white" }} bg='red.500' color='white' onClick={() => emptyBasket()}>Sepeti Boşalt</MenuItem>
                 </MenuList>
-:
-''
+                :
+                ''
             }
                 </>
             )}

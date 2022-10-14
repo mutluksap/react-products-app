@@ -32,10 +32,10 @@ function App() {
   const addBasket = (product) => {
     const basketedProduct = basket.filter(basketProduct => product.id === basketProduct.id);
     if(basketedProduct.length !== 0){
-      basketedProduct[0].productCount += 1
+      basketedProduct[0].productCount += 1;
       setBasket([...basket.find(item => item.id === basketedProduct[0].id, basketedProduct[0])])
     }else {
-      setBasket([...basket, {...product, 'productCount': 1}])
+      setBasket([...basket, {...product, 'productCount': 1}]);
     }
   }
 
